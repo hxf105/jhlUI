@@ -30,7 +30,11 @@ findID(id='select-date-dom').send_keys('2018-11-30')  #输入日期
 findXpath(xpath='//*[@id="order_info"]/tbody/tr[10]/td[2]/div[1]/label/input').send_keys('F:/测试执行资料库/文档/支持/pyselenium文件采购合同.docx')  #上传文件
 findID(id='select-supply-company').click() #单击选择供应商
 wait3()
-findXpath(xpath='//*[@id="select_company_list"]/tbody/tr[9]/td[2]').click() #选择一项
+findID(id='search-company-text').send_keys('柏嘉交科-供应商测试')
+findID(id='select-company-search-button').click()
+wait3()
+findXpath(xpath='//*[@id="select_company_list"]/tbody/tr/td[1]').click()
+wait3()
 findXpath(xpath='/html/body/div[2]/div[2]/div/div[3]/div').click() #单击确定按钮
 wait3()
 findXpath(xpath='//*[@id="order_info"]/tbody/tr[12]/td[2]/div/div').click() #单击选择物流负责人

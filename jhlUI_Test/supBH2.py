@@ -61,6 +61,7 @@ wait3()
 findXpath(xpath='/html/body/div[2]/div[2]/div/div[3]/div[2]').click() #单击提交按钮,提交备货信息
 wait3()
 findID(id='title').send_keys('中交一公局钢材采购') #输入查询条件：任务单名称“中交一公局钢材采购”
+wait3()
 findID(id='order_search').click() #单击搜索按钮
 wait3()
 
