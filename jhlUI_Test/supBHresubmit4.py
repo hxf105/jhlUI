@@ -17,5 +17,3 @@ findXpath(xpath='/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div[2]/div/
 wait3()
 findXpath(xpath='/html/body/div[3]/div[2]/div/div[3]/div[2]').click() #单击提交按钮，重新提交审核
 wait3()
-
-
