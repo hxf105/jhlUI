@@ -4,6 +4,10 @@ driver.maximize_window()
 
 # driver.set_window_size(1366,768)   #设置窗口大小
 import time as t
+def wait1():
+    t.sleep(1)
+def wait2():
+    t.sleep(2)
 def wait3():
     t.sleep(3)
 def wait5():

@@ -3,14 +3,15 @@ from jhlUI_Test.BasicFunction import *
 role_s()
 login_s1()
 findXpath(xpath='//*[@id="common-leftmenu"]/ul/li[2]/div[1]/a/span[2]').click() #单击订单菜单
-wait3()
+wait1()
 findXpath(xpath='//*[@id="common-leftmenu"]/ul/li[2]/div[2]/ul/li[1]/a').click() #单击进行中的订单菜单
 wait3()
 findID(id='title').send_keys('中交一公局钢材采购') #输入查询条件：任务单名称“中交一公局钢材采购”
+wait1()
 findID(id='order_search').click() #单击搜索按钮
-wait3()
+wait2()
 findXpath(xpath='//*[@id="order-table"]/tbody/tr[2]/td/div/span').click() #单击新增备货信息按钮
-wait3()
+wait2()
 # 上传产品授权书
 findXpath(xpath='/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div/div[1]/div/div[2]/div[2]/div[1]/label/input').send_keys('F:/测试执行资料库/文档/支持/河北廊坊新机场北线高速公路廊坊段项目物资采购合同.docx')
 findXpath(xpath='/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div/div[1]/div/div[2]/div[2]/div[1]/label/input').send_keys('F:/测试执行资料库/文档/支持/供应商管理.doc')
@@ -49,21 +50,21 @@ findXpath(xpath='/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div/div[1]/
 findXpath(xpath='/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div/div[1]/div/div[4]/div[2]/div[1]/label/input').send_keys('F:/测试执行资料库/新图/timg (26).jpg')
 wait15()
 findID(id='remark').send_keys('备货信息，请审核，pyselenium') #输入备注
-wait3()
+wait1()
 findXpath(xpath='//*[@id="show_item_list"]/thead/tr/th[1]/div[1]/input').click() #点击货物全选按钮
 findXpath(xpath='//*[@id="show_item_list"]/tbody/tr[2]/td[6]/div/input').clear()
 findXpath(xpath='//*[@id="show_item_list"]/tbody/tr[2]/td[6]/div/input').send_keys('10')
-wait3()
+wait1()
 findXpath(xpath='/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div/div[2]/div[2]/div[1]/div[2]/div[4]/div[2]/ul/li[9]/a').click()
-wait3()
+wait1()
 findXpath(xpath='//*[@id="show_item_list"]/thead/tr/th[1]/div[1]/input').click() #点击货物全选按钮
-wait3()
+wait1()
 findXpath(xpath='/html/body/div[2]/div[2]/div/div[3]/div[2]').click() #单击提交按钮,提交备货信息
 wait3()
-findID(id='title').send_keys('中交一公局钢材采购') #输入查询条件：任务单名称“中交一公局钢材采购”
-wait3()
-findID(id='order_search').click() #单击搜索按钮
-wait3()
+# findID(id='title').send_keys('中交一公局钢材采购') #输入查询条件：任务单名称“中交一公局钢材采购”
+# wait3()
+# findID(id='order_search').click() #单击搜索按钮
+# wait3()
 
 
 
