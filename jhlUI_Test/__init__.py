@@ -1,6 +1,7 @@
-# import jhlUI_Test.buyIssue1
+import jhlUI_Test.buy1Issue
 import jhlUI_Test.sup2BH
-# import jhlUI_Test.buyBHSHBTG3
-# import jhlUI_Test.supBHresubmit4
-# import jhlUI_Test.buyBHSHTG5
-# import jhlUI_Test.supFX6
+import jhlUI_Test.buy3BHSHBTG
+import jhlUI_Test.sup4BHresubmit
+import jhlUI_Test.buy5BHSHTG
+import jhlUI_Test.sup6FX
+import jhlUI_Test.buy7FXSHBTG
