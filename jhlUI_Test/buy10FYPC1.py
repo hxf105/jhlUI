@@ -32,5 +32,18 @@ findXpath(xpath='/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div/div[5]/
 findID(id='push_batch_remark').send_keys('pyselenium推送发运批次') #输入备注
 wait2()
 findXpath(xpath='/html/body/div[2]/div[2]/div/div[3]/div').click() #单击提交按钮
-wait3()
-
+wait2()
+findXpath(xpath='//*[@id="batch-flow-show"]/div/div[2]/div[2]/div/ul/li[2]/div[4]/div[4]/span[2]').click() #单击推送发运批次的查看详细按钮
+wait1()
+findClassName(name='link edit').click() #单击编辑按钮
+wait1()
+# findXpath(xpath='/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div/div[1]/div/a[1]').click() #单击编辑按钮
+findXpath(xpath='/html/body/div[2]/div[2]/div/div[3]/div') #单击编辑画面的提交按钮
+wait2()
+findXpath(xpath='//*[@id="batch-flow-show"]/div/div[2]/div[2]/div/ul/li[2]/div[4]/div[4]/span[2]').click() #单击推送发运批次的查看详细按钮
+wait1()
+findClassName(name='link preview-history').click() #单击查看历史按钮
+wait1()
+# findXpath(xpath='/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div/div[1]/div/a[2]').click() #单击查看历史按钮
+findXpath(xpath='/html/body/div[2]/div[2]/div/div[1]/a/span[2]/span').click() #单击关闭按钮
+wait2()
