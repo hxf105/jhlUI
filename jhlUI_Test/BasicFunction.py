@@ -76,6 +76,7 @@ def login_b(username,password):
     findID(id='uname').send_keys(username)
     findID('psd').clear()
     findID(id='psd').send_keys(password)
+    wait1()
     findXpath(xpath='/html/body/div[1]/div/div/div[2]/div/div[2]/div[1]/div[1]/form/button').click()  # 单击登录按钮
     wait3()
 def login_b1():
@@ -93,6 +94,7 @@ def login_s(username,password):
     findID(id='loginform-username').send_keys(username)
     findID(id='loginform-password').clear()
     findID(id='loginform-password').send_keys(password)
+    wait1()
     findXpath(xpath='//*[@id="login-form"]/div/div[4]/div/button').click()
     wait3()
 
@@ -105,6 +107,7 @@ def login_a(username,password):
     findID(id='uname').send_keys(username)
     findID(id='psd').clear()
     findID(id='psd').send_keys(password)
+    wait1()
     findXpath(xpath='/html/body/div/div/div/div[2]/div/div[2]/div[1]/div[1]/form/button').click()
     wait3()
 def login_a1():

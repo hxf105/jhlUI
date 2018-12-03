@@ -32,7 +32,7 @@ findXpath(xpath='/html/body/div[2]/div[2]/div/div[2]/div/div/div/div/div/div[5]/
 findID(id='push_batch_remark').send_keys('pyselenium推送发运批次') #输入备注
 wait2()
 findXpath(xpath='/html/body/div[2]/div[2]/div/div[3]/div').click() #单击提交按钮
-wait3()
+wait2()
 findXpath(xpath='//*[@id="batch-flow-show"]/div/div[2]/div[2]/div/ul/li[2]/div[4]/div[4]/span[2]').click() #单击推送发运批次的查看详细按钮
 wait1()
 findClassName(name='link edit').click() #单击编辑按钮
