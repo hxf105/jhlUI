@@ -110,6 +110,11 @@ def login_a(username,password):
 def login_a1():
     return login_a(username='17791615276',password='123456')
 
+# 下拉菜单
+def dropDownx(xpath,val):
+    findXpath(xpath=xpath).find_element_by_xpath("//option[@value="+val+"]")
+def dropDowni(id,val):
+    findID(id=id).find_element_by_xpath("//option[@value="+val+"]")
 
 
 # 退出登入
