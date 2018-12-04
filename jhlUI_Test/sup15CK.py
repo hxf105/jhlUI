@@ -30,7 +30,11 @@ findID(id='id="pub_deliver_waybill_sn"').send_keys('pyselenium货运单号')
 findID(id='pub_deliver_address').send_keys('pyselenium地址')
 js="$('input[id=pub_deliver_start_time]').removeAttr('readonly')"
 driver.execute_script(js)
-findID(id='pub_deliver_start_time').send_keys('F://测试执行资料库/新图/tim0g.jpg')
-wait2()
+findID(id='pub_deliver_start_time').send_keys('2018-12-10')
+wait1()
+js="$('input[id=pub_deliver_end_time]').removeAttr('readonly')"
+driver.execute_script(js)
+findID(id='pub_deliver_end_time').send_keys('2018-12-13')
+wait1()
 findXpath(xpath='/html/body/div[2]/div[2]/div/div[3]/div').click() #单击提交按钮
 wait3()
