@@ -24,7 +24,7 @@ def wait20():
 
 def role_b():
     global driver
-    driver.get('http://buyer19.jiaohuilian.com/')
+    driver.get('http://buyer.jiaohuilian.com/')
     wait3()
 def role_s():
     global driver
