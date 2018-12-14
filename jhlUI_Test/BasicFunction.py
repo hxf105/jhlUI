@@ -24,7 +24,7 @@ def wait20():
 
 def role_b():
     global driver
-    driver.get('http://buyer.jiaohuilian.com/')
+    driver.get('http://buyer19.jiaohuilian.com/')
     wait3()
 def role_s():
     global driver
@@ -119,6 +119,10 @@ def dropDownx(xpath,val):
 def dropDowni(id,val):
     findID(id=id).find_element_by_xpath("//option[@value="+val+"]")
 
+# 删除readonly属性
+def js():
+    js = "$('input[id=select-date-dom]').removeAttr('readonly')"  # 2.jQuery，移除属性       【成功】
+    driver.execute_script(js)
 
 # 退出登入
 def quit():
