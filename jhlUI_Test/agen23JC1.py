@@ -27,3 +27,4 @@ findID(id='incoming_container_number').send_keys('GH001') #输入柜号
 findID(id='incoming_container_seal_number').send_keys('QFH001') #输入铅封号
 findXpath(xpath='/html/body/div[3]/div[2]/div/div[2]/div/div/div/div[3]/table/tbody/tr[2]/td/div/div/div').click() #单击第一个批次的选中按钮
 # 上传进舱图片
+findXpath(xpath='/html/body/div[3]/div[2]/div/div[2]/div/div/div/div[3]/table/tbody/tr[2]/td/div/div/div').click() #单击第一个批次的选中按钮
